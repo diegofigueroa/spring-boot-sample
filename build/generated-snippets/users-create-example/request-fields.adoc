@@ -1,0 +1,14 @@
+
+|===
+|Path|Type|Description
+
+|name
+|String
+|The name of the user.
+
+|email
+|String
+|The email of the user.
+
+|===
+

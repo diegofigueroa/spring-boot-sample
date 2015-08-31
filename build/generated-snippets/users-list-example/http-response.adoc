@@ -1,0 +1,9 @@
+
+[source,http]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+
+[{"id":146,"name":"Anakin Skywalker","email":"anakin.skywalker@empire.com"},{"id":147,"name":"Luke Skywalkler","email":"luke@rebels.com"},{"id":148,"name":"Han Solo","email":"han@solo.com"}]
+----
+

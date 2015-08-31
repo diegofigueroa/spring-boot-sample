@@ -1,0 +1,9 @@
+
+[source,http]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+
+{"id":145,"name":"Luke Skywalker","email":"luke@rebels.com"}
+----
+

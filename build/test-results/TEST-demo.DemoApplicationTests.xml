@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demo.DemoApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-08-31T00:50:21" hostname="vizio" time="0.0">
+  <properties/>
+  <testcase name="contextLoads" classname="demo.DemoApplicationTests" time="0.0"/>
+  <system-out><![CDATA[2015-08-30 18:50:21.196  INFO 14271 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.restdocs.config.RestDocumentationTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2015-08-30 18:50:21.197  INFO 14271 --- [    Test worker] o.s.t.c.web.WebTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2ffd608c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@23cd9ff1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10bf9994, org.springframework.test.context.transaction.TransactionalTestExecutionListener@12fbcc23, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@51171791, org.springframework.restdocs.config.RestDocumentationTestExecutionListener@430c5a2e]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

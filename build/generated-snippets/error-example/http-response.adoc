@@ -1,0 +1,9 @@
+
+[source,http]
+----
+HTTP/1.1 400 Bad Request
+Content-Type: application/json;charset=UTF-8
+
+{"timestamp":1440982220670,"status":400,"error":"Bad Request","message":"The user 'http://localhost:8080/users/123' does not exist","path":"/v1/users"}
+----
+

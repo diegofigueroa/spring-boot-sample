@@ -1,0 +1,7 @@
+
+[source,http]
+----
+GET /error HTTP/1.1
+
+----
+
