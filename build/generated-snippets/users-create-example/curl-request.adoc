@@ -1,6 +1,0 @@
-
-[source,bash]
-----
-$ curl 'http://localhost:8080/v1/users' -i -X POST -H 'Content-Type: application/json' -H 'Content-Length: 51' -d '{"email":"luke@rebels.com","name":"Luke Skywalker"}'
-----
-
