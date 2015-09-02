@@ -7,12 +7,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
+import java.net.URI;
 import java.util.Properties;
 
 @SpringBootApplication
 public class DemoApplication {
 
-    @Value("${database.url:jdbc:postgresql://localhost:5432/demo}")
+    @Value("${database.url:postgresql://postgres:password@localhost:5432/demo}")
     private String databaseUrl;
 
     public static void main(String[] args) {
@@ -23,11 +24,11 @@ public class DemoApplication {
 
     @Bean
     public DataSource dataSource() {
+        final URI dbUri = URI.create(databaseUrl);
         final DriverManagerDataSource dataSource = new DriverManagerDataSource();
-
-        dataSource.setUrl(databaseUrl);
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("password");
+        dataSource.setUrl("jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath());
+        dataSource.setUsername(dbUri.getUserInfo().split(":")[0]);
+        dataSource.setPassword(dbUri.getUserInfo().split(":")[1]);
 
         return dataSource;
     }
