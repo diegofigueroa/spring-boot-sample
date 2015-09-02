@@ -1,5 +1,6 @@
 package demo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -11,6 +12,9 @@ import java.util.Properties;
 @SpringBootApplication
 public class DemoApplication {
 
+    @Value("${database.url:jdbc:postgresql://localhost:5432/demo}")
+    private String databaseUrl;
+
     public static void main(String[] args) {
         final SpringApplication app = new SpringApplication(DemoApplication.class);
         app.setDefaultProperties(getApplicationProperties());
@@ -21,7 +25,7 @@ public class DemoApplication {
     public DataSource dataSource() {
         final DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/demo");
+        dataSource.setUrl(databaseUrl);
         dataSource.setUsername("postgres");
         dataSource.setPassword("password");
 

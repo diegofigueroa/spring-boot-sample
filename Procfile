@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar build/libs/demo-0.0.1-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -Ddatabase.url=$DATABASE_URL -jar build/libs/demo-0.0.1-SNAPSHOT.jar
