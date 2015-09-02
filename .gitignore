@@ -4,6 +4,7 @@
 .project
 .gradle
 build
+!gradle-wrapper.jar
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
