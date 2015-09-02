@@ -66,6 +66,10 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.6'
 }
 
+task stage {
+    dependsOn installDist
+}
+
 //noinspection GroovyAssignabilityCheck
 flyway {
     url = 'jdbc:postgresql://localhost:5432/demo'
